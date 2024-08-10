@@ -14,7 +14,9 @@
 
 body{
     margin: 0;
+    padding: 0;
     font-family: "Urbanist", sans-serif;
+    overflow-x: hidden;
 }
 
 .wrapper{
@@ -196,4 +198,304 @@ section.destination{
     top: 9%;
     transform: translateX(910%);
 }
+
+.destination-content .list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.destination-content .list .card{
+    width: 31%;
+    padding: 16px;
+    border: 1px solid #F2F2F2;
+    margin-bottom: 41px;
+    background-color: white;
+    box-shadow: #A6A6A6;
+    box-shadow: -55.45px 50.41px 98px 0px #3736640A;
+    box-shadow: 105.45px 50.41px 78.04px 0px #4d4c8a0d;
+
+
+}
+
+.destination-content .list img .dest-images{
+    width: 20%;
+}
+
+.destination-content h3{
+    font-family: "Urbanist", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.destination-content .location{
+    position: relative;
+}
+
+.destination-content .location img{
+    position: absolute;
+    transform: translateX(-13%);
+}
+
+.destination-content .location p{
+    padding-left: 20px;
+}
+
+/* END OF DESTINATION SECTION */
+
+section.choose-us{
+    align-items: center;
+}
+
+.choose-us .heading{
+    margin: 60px 161px;
+    text-align: center;
+}
+
+.choose-us .heading h2{
+    font-family: "Gilda Display", sans-serif;
+    font-size: 72px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.choose-us .heading p{
+    font-family: "Urbanist", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+.choose-us .list-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+    width: 100%;
+}
+
+.choose-us .list-card .card{
+    width: 32%;
+    box-shadow: 10px 26px 150px 0px #4343641A;
+
+}
+
+.choose-us .list-card .card.center{
+    background-color: var(--green-color);
+    color: white;
+}
+
+.choose-us .list-card .card.top{
+    background-color: white;
+    color: var(--dark-color);
+}
+
+.choose-us .list-card .card .list-top{
+    background-color: var(--green-color);
+    height: 4px;
+}
+
+
+.choose-us .list-card .content{
+    padding: 32px;
+}
+
+.choose-us .list-card .content h3{
+    font-family: "Gilda Display", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 62px;
+    margin-bottom: 20px;
+}
+
+.choose-us .list-card .content p{
+    font-family: Urbanist;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+}
+.choose-us .list-card .action{
+    display: flex;
+    justify-content: end;
+    gap: 8px;
+    width: 100%;
+}
+
+section.memorable-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0;
+}
+
+
+.memorable-section .left .content .h4{
+    font-family: "Gilda Display", sans-serif;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 84px;
+    margin-bottom: 28px;
+}
+
+.memorable-section .left .content .h4 .green{
+    font-family: "Gilda Display", sans-serif;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 84px;
+    margin-bottom: 28px;
+    color: var(--green-color);   
+}
+
+.memorable-section .left .content .p{
+    font-family: "Urbanist", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    margin-bottom: 48px;
+}
+
+.memorable-section .left .content .p .green{
+    font-family: "Urbanist", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    margin-bottom: 48px;
+    color: var(--green-color);
+}
+
+.memorable-section .left .content .button{
+    display: flex;
+    align-items: center;
+}
+
+.memorable-section .left .content .button .left-btn{
+    background: var(--green-color);
+    color: white;
+    font-family: "Urbanist", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 16px 32px;
+}
+
+.memorable-section .left .content .button .right-btn{
+    font-family: "Urbanist", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--dark-color);
+    padding-left: 32px;
+}
+
+/* END OF MEMORABLE SECTION */
+
+.documentation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.documentation .wrt{
+    font-family: Gilda Display;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 84px;
+    width: 80%;
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+.documentation img{
+    max-width: 100%;
+    height: auto;
+    max-width: 1400px;   
+    margin-bottom: 100px;    
+}
+
+footer .heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .heading .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+footer .heading h4{
+    font-family: Gilda Display;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 84px;
+    text-align: center;
+}
+
+footer .heading .button{
+    padding: 16px 32px;
+    background-color: var(--green-color);
+    color: white;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+footer .travel-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+footer .travel-footer .left{
+    width: 28%;
+}
+
+footer .travel-footer .left .content .h4{
+    font-family: Gilda Display;
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    color: var(--green-color);
+    margin-bottom: 20px;
+}
+
+footer .travel-footer .left .content .p{
+    font-family: Urbanist;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: left;
+    margin-bottom: 48px;
+}
+
+footer .menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+ footer .menu li {
+    display: inline;
+    margin-right: 10px;
+}
+
+footer .menu a {
+    text-decoration: none;
+    color: var(--ash-color); 
+    font-family: Urbanist;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32px;
+    text-align: left;
+}
+
+footer .menu a:hover {
+    color: #007BFF; 
+} 
 
