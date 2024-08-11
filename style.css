@@ -14,29 +14,23 @@
 
 body{
     margin: 0;
-    padding: 0;
     font-family: "Urbanist", sans-serif;
-    overflow-x: hidden;
 }
 
-.wrapper{
-    max-width: 1200px;
-    margin: 0 auto;
-}
 
 /* HEADER SECTION */
 
 header{
     height: auto;
+    padding: 0 120px;
 }
 
 
 nav{
     display: flex;
     justify-content: space-between;
-    width: 1200px;
-    position: fixed;
-    top: 44px;
+    align-items: center;
+    margin-top: 44px;
 }
 
 nav .logo{
@@ -44,6 +38,8 @@ nav .logo{
     font-size: 28px;
     color: var(--green-color);
 }
+
+
 
 .hero-section{
     margin: 0;
@@ -80,7 +76,7 @@ nav .logo{
 .hero-section .centered-image.one {
     position: absolute;
     width: 78%;
-    top: 54.5%;
+    top: 460px;
     left: 0;
     z-index: 3;
     transform: translateX(14%);
@@ -90,7 +86,7 @@ nav .logo{
     position: absolute;
     width: 85%;
     left: 0;
-    top: 62%;
+    top: 610px;
     transform: translateX(5%);
     z-index: 2;
 
@@ -100,8 +96,8 @@ nav .logo{
 .hero-section .centered-image.circle {
     position: absolute; 
     left: 0;
-    top: 30%;
-    width: 10%;
+    top: 580px;
+    width: 97%;
     z-index: 1;
 }
 
@@ -109,18 +105,23 @@ nav .logo{
 .hero-section .centered-image.four {
     position: absolute; 
     top: 0;
-    left: 5%;
-    width: 90%;
+    left: 0;
+    width: 100%;
     transform: translateY(50%);
 }
 
 
 .hero-bar{
+    display: flex;
+    position: relative;
     width: 100%;
     height: 160px;
     background: var(--green-color);
-    z-index: 6;
     color: white;
+    margin-top: 340px;
+    z-index: 4;
+    align-items: center;
+    padding: 40px 60px;
 }
 
 .hero-bar .content{
@@ -131,8 +132,7 @@ nav .logo{
 
 .hero-bar .content .end{
     width: 30%;
-    line-height: 1.5;
-    padding: 48px 60px;
+    line-height: 1.6;
 }
 
 .hero-bar .end.center-text{
@@ -145,7 +145,7 @@ nav .logo{
 /* END OF HEADER SECTION */
 
 section.destination{
-    padding: 100px 0;
+    padding: 100px 120px;
 }
 
 .destination-bar{
@@ -178,9 +178,9 @@ section.destination{
     font-family: "Urbanist", sans-serif;
     font-size: 18px;
     font-weight: 400;
-    color: var(--very-light-ash-color);
+    background: var(--very-light-ash-color);
     border-radius: 50px;
-    border-color: var(--light-ash-color);
+    border: 1px solid var(--light-ash-color);
     padding: 16px 45px;
     width: 100%;
 }
@@ -213,12 +213,10 @@ section.destination{
     box-shadow: #A6A6A6;
     box-shadow: -55.45px 50.41px 98px 0px #3736640A;
     box-shadow: 105.45px 50.41px 78.04px 0px #4d4c8a0d;
-
-
 }
 
-.destination-content .list img .dest-images{
-    width: 20%;
+.destination-content .list img.dest-images{
+    width: 100%;
 }
 
 .destination-content h3{
@@ -244,6 +242,7 @@ section.destination{
 
 section.choose-us{
     align-items: center;
+    padding: 0 120px;
 }
 
 .choose-us .heading{
@@ -323,13 +322,25 @@ section.choose-us{
 section.memorable-section{
     display: flex;
     justify-content: space-between;
-    padding: 100px 0;
+    align-items: center;
+    padding: 100px 120px;
 }
 
+.memorable-section .right{
+    width: 100%;
+}
+
+.memorable-section .right img{
+    width: 100%;
+}
+
+.memorable-section .left{
+    width: 100%;
+}
 
 .memorable-section .left .content .h4{
     font-family: "Gilda Display", sans-serif;
-    font-size: 72px;
+    font-size: 68px;
     font-weight: 400;
     line-height: 84px;
     margin-bottom: 28px;
@@ -383,7 +394,6 @@ section.memorable-section{
     padding-left: 32px;
 }
 
-/* END OF MEMORABLE SECTION */
 
 .documentation{
     display: flex;
@@ -401,13 +411,12 @@ section.memorable-section{
     width: 80%;
     text-align: center;
     margin-bottom: 20px; 
+    padding: 0 120px;
 }
 
 .documentation img{
     max-width: 100%;
-    height: auto;
-    max-width: 1400px;   
-    margin-bottom: 100px;    
+    height: auto; 
 }
 
 footer .heading{
@@ -423,6 +432,7 @@ footer .heading .container{
     align-items: center;
     text-align: center;
     width: 100%;
+    padding: 0 120px;
 }
 
 footer .heading h4{
@@ -448,8 +458,10 @@ footer a{
 footer .travel-footer{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: end;
+    margin-top: 80px;
     margin-bottom: 100px;
+    padding: 0 120px;
 }
 
 footer .travel-footer .left{
@@ -474,6 +486,14 @@ footer .travel-footer .left .content .p{
     margin-bottom: 48px;
 }
 
+footer .travel-footer .left .social-links img{
+    padding-right: 32px;
+}
+
+footer .divider{
+    width: 100%;
+}
+
 footer .menu ul {
     list-style-type: none;
     padding: 0;
@@ -482,7 +502,7 @@ footer .menu ul {
 
  footer .menu li {
     display: inline;
-    margin-right: 10px;
+    padding-right: 40px;
 }
 
 footer .menu a {
