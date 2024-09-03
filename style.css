@@ -14,8 +14,6 @@ body{
     margin: 0;
     font-family: "Urbanist", sans-serif;
 }
-
-/* HEADER SECTION */
 header{
     height: auto;
     padding: 0 120px;
@@ -88,18 +86,15 @@ nav .logo{
     padding: 40px 60px;
     margin-top: 300px;
 }
-
 .hero-bar .mobile{
     display: none;
 }
-
 .hero-bar .end.center-text{
     font-family: "Gilda Display", sans-serif;
     font-size: 30px;
     text-align: center;
     font-weight: 400;
 }
-/* END OF HEADER SECTION */
 section.destination{
     padding: 100px 120px;
 }
@@ -173,8 +168,6 @@ section.destination{
 .destination-content .location p{
     padding-left: 20px;
 }
-
-/* END OF DESTINATION SECTION */
 section.choose-us{
     align-items: center;
     padding: 0 120px;
@@ -404,26 +397,23 @@ footer .menu a {
 footer .menu a:hover {
     color: #007BFF; 
 } 
-
 @media(max-width: 1244px){
     .hero-section .text, 
 .hero-section .heading-text{
     position: relative;
     font-family: "Gilda Display", sans-serif;
     font-size: 9rem;
+    }
 }
-}
-
 @media(max-width: 1243px){
     .hero-section .text, 
 .hero-section .heading-text{
     font-size: 8.5rem;
-}
+    }
 .hero-bar .end.center-text{
     font-size: 18px;
+    }
 }
-}
-
 @media(max-width: 1093px){
     .hero-section .text, 
     .hero-section .heading-text{
@@ -448,9 +438,7 @@ footer .menu a:hover {
     .destination-bar .left{
         font-size: 68px;
     }
-   
 }
-
 @media(max-width:992px){
     .hero-section .text, 
     .hero-section .heading-text{
@@ -472,7 +460,6 @@ footer .menu a:hover {
         font-size: 5rem;
     }
 }
-
 @media(max-width: 768px){
     header{
         padding: 0;
@@ -483,7 +470,7 @@ footer .menu a:hover {
     nav .logo{
         font-weight: bolder;
     }
-    .hero-section .text, 
+.hero-section .text, 
 .hero-section .heading-text{
     padding: 0 30px;
     font-size: 6rem;
@@ -630,19 +617,19 @@ footer .travel-footer .right{
 }
 @media(max-width:745px){
     .hero-section .text, 
-.hero-section .heading-text{
-    padding: 0 30px;
-    font-size: 4rem;
-}
-footer .menu a{
-    font-size: 18px;
-}
-.hero-bar .end{
-    font-size: 13px;
-}
-.hero-bar .end.center-text{
-    font-size: 27px;
-}
+    .hero-section .heading-text{
+        padding: 0 30px;
+        font-size: 4rem;
+    }
+    footer .menu a{
+        font-size: 18px;
+    }
+    .hero-bar .end{
+        font-size: 13px;
+    }
+    .hero-bar .end.center-text{
+        font-size: 27px;
+    }
 }
 @media(max-width: 572px){
     .hero-section .text, 
@@ -739,11 +726,11 @@ footer .menu a{
     footer .heading h4{
         font-size: 40px;
     }
-    @media(max-width: 375px){
+}
+@media(max-width: 375px){
         .documentation .wrt{
             font-size: 40px;
         }
-    }
     .hero-bar .end.left-text{
         font-size: 9px;
     }
