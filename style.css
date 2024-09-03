@@ -89,6 +89,10 @@ nav .logo{
     margin-top: 300px;
 }
 
+.hero-bar .mobile{
+    display: none;
+}
+
 .hero-bar .end.center-text{
     font-family: "Gilda Display", sans-serif;
     font-size: 30px;
@@ -180,9 +184,11 @@ section.destination{
 section.choose-us{
     align-items: center;
     padding: 0 120px;
+    display: flex;
+    flex-direction: column;
 }
 .choose-us .heading{
-    margin: 60px 161px;
+    width: 80%;
     text-align: center;
 }
 .choose-us .heading h2{
@@ -469,7 +475,136 @@ footer .menu a:hover {
     .destination-bar form .search{
         left:300px;
     }
+    .hero-section .centered-image.four {
+        position: absolute;
+        width: 100%;
+        top: 190px;
+        left: 0;
+    }
+    .hero-bar .end{
+        font-size: 12px;
+    }
 }
-@media(max-width: 880px){
-    
+@media(max-width: 842px){
+    .hero-section .text, 
+    .hero-section .heading-text{
+        font-size: 5rem;
+    }
+}
+
+@media(max-width: 768px){
+    header{
+        padding: 0;
+    }
+    nav{
+        padding: 0 30px;
+    }
+    nav .logo{
+        font-weight: bolder;
+    }
+    .hero-section .text, 
+.hero-section .heading-text{
+    padding: 0 30px;
+    font-size: 6rem;
+}
+.hero-section .centered-image.one{
+    top: 200px;
+}
+.hero-section .centered-image.two{
+    top: 355px;
+}
+.hero-section .centered-image.four{
+    top: 140px;
+}
+.hero-bar{
+    flex-direction: column;
+    height: 100%;
+    margin-top: 200px;
+    padding: 24px 0;
+    margin-top: 290px;
+}
+.hero-bar img{
+    display: none;
+}
+.hero-bar .mobile{
+    display: block;
+    width: 100%;
+}
+.hero-bar .end{
+    font-size: 18px;
+}
+.hero-bar .end.center-text{
+    font-size: 30px;
+}
+section.destination{
+    margin-top: 80px;
+    padding: 0 30px;
+}
+section .destination-bar{
+    flex-direction: column;
+}
+.destination-bar .left{
+    width: 100%;
+    font-size: 80px;
+}
+.destination-bar .right p{
+    width: 100%;
+    font-size: 35px;
+    margin: 14px 0;
+}
+.destination-bar form input{
+    height: 65px;
+}
+.destination-bar form .search{
+    left: 620px;
+}
+.destination-content .card{
+    width: 100%;
+}
+.destination-content .list{
+    flex-direction: column;
+}
+.destination-content .list .card{
+    width: 100%;
+}
+section.choose-us{
+    padding:0 30px;
+}
+.choose-us .list-card{
+    flex-direction: column;
+    width: 100%;
+}
+.choose-us .list-card .card{
+    width: 100%;
+}
+section.memorable-section{
+    flex-direction: column;
+    padding: 0 30px;
+}
+.documentation .wrt{
+    padding: 0 30px;
+    margin-top: 80px;
+    width: 100%;
+    font-size: 60px;
+}
+.documentation img{
+    padding: 0;
+}
+footer{
+    padding: 0 30px;
+}
+footer .heading .container{
+    width: 100%;
+    flex-direction: column;
+    padding: 0;
+    align-items: flex-start;
+}
+footer .heading h4{
+    text-align: start;
+    margin: 0;
+}
+footer .heading .button{
+    padding: 20px 45px;
+    margin-bottom: 45px;
+}
 }
