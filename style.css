@@ -141,12 +141,6 @@ section.destination{
     top: 0;
     transform: translateY(50%);
 }
-
-.destination-bar form .search{
-    position: absolute;
-    left: 430px;
-    top: 9%;
-}
 .destination-content .list{
     display: flex;
     justify-content: space-between;
@@ -332,12 +326,6 @@ section.memorable-section{
     max-width: 100%;
     height: auto; 
 }
-footer .heading{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
 footer .heading .container{
     display: flex;
     justify-content: space-between;
@@ -374,7 +362,7 @@ footer .travel-footer{
 footer .travel-footer .left{
     width: 28%;
 }
-footer .travel-footer .left .content .h4{
+footer .travel-footer .left .h4{
     font-family: Gilda Display;
     font-size: 28px;
     font-weight: 400;
@@ -382,7 +370,7 @@ footer .travel-footer .left .content .h4{
     color: var(--green-color);
     margin-bottom: 20px;
 }
-footer .travel-footer .left .content .p{
+footer .travel-footer .left .p{
     font-family: Urbanist;
     font-size: 18px;
     font-weight: 500;
@@ -462,18 +450,11 @@ footer .menu a:hover {
     }
    
 }
-@media(max-width:1078px){
-    .destination-bar form .search{
-        left:380px;
-    }
-}
+
 @media(max-width:992px){
     .hero-section .text, 
     .hero-section .heading-text{
         font-size: 6rem;
-    }
-    .destination-bar form .search{
-        left:300px;
     }
     .hero-section .centered-image.four {
         position: absolute;
@@ -522,6 +503,7 @@ footer .menu a:hover {
     margin-top: 200px;
     padding: 24px 0;
     margin-top: 290px;
+    gap: 30px;
 }
 .hero-bar img{
     display: none;
@@ -551,12 +533,10 @@ section .destination-bar{
     width: 100%;
     font-size: 35px;
     margin: 14px 0;
+    line-height: 1.5;
 }
 .destination-bar form input{
     height: 65px;
-}
-.destination-bar form .search{
-    left: 620px;
 }
 .destination-content .card{
     width: 100%;
@@ -573,6 +553,7 @@ section.choose-us{
 .choose-us .list-card{
     flex-direction: column;
     width: 100%;
+    gap: 30px;
 }
 .choose-us .list-card .card{
     width: 100%;
@@ -592,6 +573,7 @@ section.memorable-section{
 }
 footer{
     padding: 0 30px;
+    margin-top: 80px;
 }
 footer .heading .container{
     width: 100%;
@@ -606,5 +588,169 @@ footer .heading h4{
 footer .heading .button{
     padding: 20px 45px;
     margin-bottom: 45px;
+    margin-top: 18px;
 }
+footer .heading .container img{
+    max-width: 100%;
+}
+footer .travel-footer{
+    flex-direction: column;
+    align-items: center;
+    padding: 0 30px;
+}
+footer .travel-footer .left{
+    width: 100%;
+}
+
+footer .travel-footer .left .p{
+    font-size: 30px;
+    line-height: 1.5;
+}
+footer .travel-footer .left .social-links{
+    width: 50%;
+}
+footer .travel-footer .left{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+footer .travel-footer .left .h4{
+    align-self: flex-start;
+    font-weight: bolder;
+}
+footer .travel-footer .left img{
+    width: 30%;
+}
+footer .menu a{
+    font-size: 25px;
+}
+footer .travel-footer .right{
+    margin-top: 45px;
+}
+}
+@media(max-width:745px){
+    .hero-section .text, 
+.hero-section .heading-text{
+    padding: 0 30px;
+    font-size: 4rem;
+}
+footer .menu a{
+    font-size: 18px;
+}
+.hero-bar .end{
+    font-size: 13px;
+}
+.hero-bar .end.center-text{
+    font-size: 27px;
+}
+}
+@media(max-width: 572px){
+    .hero-section .text, 
+    .hero-section .heading-text{
+        padding: 0 30px;
+        font-size: 3.5rem;
+    }
+    .hero-bar .end{
+        font-size: 15px;
+    }
+    .hero-bar .end.center-text{
+        font-size: 30px;
+    }
+    .hero-section .centered-image.two{
+        top: 290px;
+    }
+    .documentation .wrt{
+        font-size: 55px;
+    }
+}
+@media(max-width: 560px){
+    .hero-section .text, 
+    .hero-section .heading-text{
+        font-size: 3rem;
+    }
+    .hero-bar .end{
+        font-size: 13px;
+    }
+    .hero-bar .end.center-text{
+        font-size: 27px;
+    }
+    .hero-section .centered-image.two{
+        top: 290px;
+    }
+    .documentation .wrt{
+        font-size: 55px;
+    }
+    .destination-bar .lef{
+        font-size: 60px;
+    }
+    .hero-section .centered-image.one{
+        top: 220px;
+    }
+    .hero-section .centered-image.two{
+        top: 375px;
+    }
+    footer .menu a{
+        font-size: 11px;
+    } 
+    footer .travel-footer .left .p {
+        font-size: 20px;
+    }
+    .destination-bar .left{
+        font-size: 50px;
+    }
+    .destination-bar .right p{
+        font-size: 20px;
+    }
+    .choose-us .heading h2{
+        font-size: 55px;
+    }
+    .memorable-section .left .content .h4{
+        font-size: 45px;
+    }
+}
+@media(max-width: 425px){
+    .hero-section .text, 
+    .hero-section .heading-text{
+        font-size: 40px;
+    }
+    .hero-section .centered-image.one{
+        top: 90px;
+    }
+    .hero-section .centered-image.two{
+        top: 149px;
+    }
+    .hero-section .centered-image.four{
+        top: 15px;
+    }
+    .hero-bar{
+        margin-top: 150px;
+    }
+    .hero-bar .end{
+        font-size: 11px;
+    }
+    footer .menu li{
+        display: inline-flex;
+        gap: 10px;
+        padding: 0;
+    }
+    footer .menu a{
+        font-size: 12px;
+    }
+    footer .heading h4{
+        font-size: 40px;
+    }
+    @media(max-width: 375px){
+        .documentation .wrt{
+            font-size: 40px;
+        }
+    }
+    .hero-bar .end.left-text{
+        font-size: 9px;
+    }
+}
+@media(max-width: 370px){
+    .hero-section .text, 
+    .hero-section .heading-text{
+        font-size: 30px;
+    }
 }
