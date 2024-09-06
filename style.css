@@ -152,6 +152,7 @@ section.destination{
 }
 .destination-content .list img.dest-images{
     width: 100%;
+    transform: rotate(-180deg);
 }
 .destination-content h3{
     font-family: "Urbanist", sans-serif;
